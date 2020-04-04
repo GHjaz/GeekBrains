@@ -2,35 +2,52 @@
 <html lang="ru">
 
 <head>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Каталог</title>
 </head>
 
 <body>
-    <header>
-        <h3>
-            Меню:
-        </h3>
-        <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+    <div class="header">
+        <table>
+            <tr>
+                <td class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </td>
+                <td class="menu"><a href="index.html">Главная</a></td>
+                <td class="menu"><a href="#">Каталог</a></td>
+                <td class="menu"><a href="contacts.html">Контакты</a></td>
+            </tr>
+        </table>
         <hr>
-    </header>
+    </div>
     <main>
         <h1>Каталог Мониторов</h1>
-        <ul>
-            <li><img src="img/BQ.jpeg" alt="Acer" width:"100px" height="100px" style="text-align: left"><a href="kat/Acer.html" style="text-decoration: none; text-align: center"><h3>Acer Nitro</h3></a></li>
-            <li><img src="img/AOC.jpg" alt="AOC"width:"100px" height="100px" style="text-align: left"><a href="kat/AOC.html"  style="text-decoration: none; text-align: center"><h3>AOC 24V2</h3></a></li>
-            <li><img src="img/phil.jpg" alt="AOC"width:"100px" height="100px" style="text-align: left"><a href="kat/Philips.html"  style="text-decoration: none; text-align: center"><h3>Philips 243V7</h3></a></li>
-        </ul>
+        <table class="tovars">
+            <tr>
+                <td><a href="#" class="monitors"><img src="img/BQ.jpeg" alt="Acer" ></a></td>
+                <td><a href="kat/Acer.html" style="text-decoration: none; text-align: center">
+                        <h3>Acer Nitro</h3>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="monitors"><img src="img/AOC.jpg" alt="AOC"></a></td>
+                <td><a href="kat/AOC.html" style="text-decoration: none; text-align: center">
+                        <h3>AOC 24V2</h3>
+                    </a></td>
+            </tr>
+            <tr>
+                <td><a href="#" class='monitors'><img src="img/phil.jpg" alt="Philips"></a></td>
+                <td><a href="kat/Philips.html" style="text-decoration: none; text-align: center">
+                        <h3>Philips 243V7</h3>
+                    </a></td>
+            </tr>
+        </table>
     </main>
     <hr>
-    <footer>
+    <div class="footer">
         &copy; Все права защищены
-    </footer>
+    </div>
 </body>
 
 </html>
