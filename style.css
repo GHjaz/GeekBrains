@@ -2,7 +2,63 @@ body {
     background-color: #f8f8f8;
 }
 
+main {
+    clear: both;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    height: 75px;
+    background-color: lightgray;
+    text-align: right;
+    clear: both;
+}
+
+.footer p {
+    padding-top: 20px;
+    padding-right: 35px;
+}
+
+.Product h1,
+.Product h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eee;
+}
+
+/*ГЛАВНОЕ МЕНЮ*/
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+/* ШАПКА САЙТОВ */
+.header {
+    height: 100px;
+    background: url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.menu {
+    padding-top: 30px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px;
+}
+
 .menu a {
+    text-align: right;
+    padding-left: 10%;
     color: red;
     text-decoration: none;
     font-style: italic;
@@ -14,14 +70,70 @@ body {
     list-style: none;
 }
 
-.Product h1,
-.Product h3 {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #eee;
+.menu a:hover {
+    color: #cfc4a5;
+    text-decoration: underline;
 }
 
+.header td {
+    padding-left: 50px;
+    width: 300px;
+}
+
+/* КОНТАКТЫ ТЕЛО */
+form input[type="text"] {
+    width: 400px;
+    height: 20px;
+    font-style: italic;
+}
+
+form {
+    text-align: center;
+    font-weight: bold;
+}
+
+input[placeholder="Ваша почта"] {
+    color: red;
+}
+
+input[placeholder="Ваша почта"]:focus {
+    background-color: #cfc4a5;
+    border-color: aqua;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+/* ТАБЛИЦЫ ХАРАКТЕРИСТИК */
+.char td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+/* КАТАЛОГ */
+.image_products{
+    float: left;
+}
+.adress{
+    padding-top: 100px;
+}
+.Acer,.AOC,.Philips{
+    clear: both;
+}
+
+.monitors img {
+    padding: 3px;
+    background-color: aqua;
+    width: 300px;
+    height 300px;
+}
+
+.monitors img:hover {
+    background-color: #f8f8f8;
+}
+
+/* Продукты */
 .short {
     color: #707070;
     font-size: 14px;
@@ -46,92 +158,38 @@ body {
     list-style: upper-roman;
 }
 
-form input[type="text"] {
-    width: 400px;
-    height: 20px;
-    font-style: italic;
-}
-
-form {
-    text-align: center;
-    font-weight: bold;
-}
-
-/* ШАПКА САЙТОВ */
-.menu a:hover {
-    color: #cfc4a5;
-    text-decoration: underline;
-}
-
-.header td {
-    padding-left: 50px;
-    width: 300px;
-}
-
-.header img {
-    height: 100px;
-    width: 100px
-}
-
-/* КОНТАКТЫ ТЕЛО */
-
-input[placeholder="Ваша почта"] {
-    color: red;
-}
-
-input[placeholder="Ваша почта"]:focus {
-    background-color: #cfc4a5;
-    border-color: aqua;
-}
-
-input[type="text"] {
-    text-transform: capitalize;
-}
-
-/* ТАБЛИЦЫ ХАРАКТЕРИСТИК */
-.char td {
-    border: solid 1px black;
-    border-collapse: collapse;
-}
-
-/* КАТАЛОГ */
-
-.tovars {
-
-    padding-left: 50px;
-    padding-bottom: 50px;
-}
-
-.tovars td{
-    vertical-align: middle;
-    height: 300px;
-    width: 500px;
-}
-.monitors img {
-    padding: 3px;
-    background-color: aqua;
-    width: 300px;
-    height 300px;
-}
-.monitors img:hover{
-    background-color: #f8f8f8;
-}
-
-/* Продукты */
-.Product p:first-letter{
+.Product p:first-letter {
     font-size: 30px;
-    font-style: "Arial" ,serif;
+    font-style: "Arial", serif;
 }
 
-cite{
+cite {
     font-family: "Romane", sans-serif;
     font-size: 15px;
 }
+
+.button button{
+    height: 50px;
+    width: 150px;
+    font-family: cursive;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.button button:hover{
+    background-color: black;
+    color:#f8f8f8;
+}
+.button button:active{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 /* Задание 8-10 */
-.Table tr:first-child{
+.Table tr:first-child {
     height: 100px;
 }
-.Table td{
+
+.Table td {
     border: 1px solid black;
     border-collapse: collapse;
 }
